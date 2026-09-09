@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.minesweeper.HelloController">
+   <children>
+      <GridPane fx:id="gPane" layoutX="48.0" layoutY="60.0">
+        
+      </GridPane>
+      <Button fx:id="spawnGridButton" layoutX="367.0" layoutY="14.0" mnemonicParsing="false" onAction="#spawnGrid" text="Create Board">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="minesLeftLbl" layoutX="172.0" layoutY="29.0" text="Mines Left:" />
+      <TextField fx:id="boardWidthTxtField" layoutX="14.0" layoutY="17.0" onAction="#spawnGrid" prefHeight="26.0" prefWidth="58.0" promptText="Width" />
+      <CheckBox fx:id="superminesTextBox" layoutX="497.0" layoutY="8.0" mnemonicParsing="false" text="Super Mines" />
+      <CheckBox fx:id="wrapAroundTextBox" layoutX="497.0" layoutY="29.0" mnemonicParsing="false" text="Wrap Around" />
+      <CheckBox fx:id="openMoreCheckbox" layoutX="600.0" layoutY="8.0" mnemonicParsing="false" selected="true" text="Open More" />
+      <CheckBox fx:id="speedrunModeCheckbox" layoutX="600.0" layoutY="30.0" mnemonicParsing="false" text="Speedrun Mode" />
+      <CheckBox fx:id="showMinesCheckbox" layoutX="150.0" layoutY="9.0" mnemonicParsing="false" text="Show Mines" />
+      <TextField fx:id="boardHeightTxtField" layoutX="87.0" layoutY="17.0" onAction="#spawnGrid" prefHeight="26.0" prefWidth="58.0" promptText="Height" />
+      <Label fx:id="timeLbl" layoutX="252.0" layoutY="9.0" text="Time" />
+   </children>
+</AnchorPane>
